@@ -1,0 +1,131 @@
+* {
+    margin: 0px;
+    padding: 0px;
+    outline: none;
+}
+
+body {
+    font-family: Segoe UI Historic, Segoe UI, Helvetica, Arial, sans-serif;
+    background-color: #18191a;
+    color: #fff;
+}
+
+a {
+    color: #e4e6eb;
+    text-decoration: none;
+}
+
+.header {
+    background: #242526;
+    color: #e4e6eb;
+    border-bottom: 1px solid #373839;
+    height: 44px;
+    display: grid;
+    grid-template-columns: repeat(12, 1fr);
+}
+
+.search {
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+    grid-column: span 3;
+}
+
+.search i {
+    margin-left: 16px;
+    width: 32px;
+    background: #6c6cff;
+    color: #fff;
+    height: 32px;
+    border-radius: 50%;
+    display: flex;
+    align-items: flex-end;
+    justify-content: center;
+    font-size: 24px;
+}
+
+.search > input {
+    background: #3a3b3c;
+    color: #fff;
+    font-size: 12px;
+    border: none;
+    padding: 9px 10px;
+    border-radius: 22px;
+    margin: 0px 10px;
+    width: 168px;
+}
+
+.sites {
+    font-size: 20px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin: 0px 80px;
+    grid-column: span 6;
+}
+
+.sites a {
+    display: flex;
+    width: 100px;
+    height: 88%;
+    border-radius: 8px;
+    justify-content: center;
+    align-items: center;
+    transition: ease-in-out .2s;
+}
+
+.sites a:hover {
+    background: #3a3b3c;
+}
+
+.sites .active, .sites .active:hover {
+    background: transparent;
+    border-radius: 0px;
+    border-bottom: 2px solid #2d88ff;
+}
+
+.user {
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    grid-column: span 3;
+}
+
+.header-profile {
+    background: #000;
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+    margin-right: 8px;
+    padding: 0px 8px;
+    height: 34px;
+    border-radius: 22px;
+}
+
+.user a span {
+    font-size: 12px;
+}
+
+.user > a > img {
+    width: 16%;
+    border-radius: 50%;
+    padding: 0px 6px;
+}
+
+.user .user-options {
+    background: #3a3b3c;
+    color: #e4e6eb;
+    border-radius: 50%;
+    width: 34px;
+    height: 34px;
+    margin-right: 8px;
+    transition: ease-in-out .2s;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.user-options:hover {
+    background: #4e4f50;
+}
