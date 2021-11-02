@@ -92,27 +92,30 @@ a {
 }
 
 .header-profile {
-    background: #000;
     display: flex;
     align-items: center;
     justify-content: flex-end;
     margin-right: 8px;
-    padding: 0px 8px;
-    height: 34px;
+    padding: 0px 12px 0px 4px;
+    height: 30px;
     border-radius: 22px;
 }
 
-.user a span {
+.header-profile:hover {
+    background: #ffffff1a;
+}
+
+.user > a > span {
     font-size: 12px;
 }
 
 .user > a > img {
-    width: 16%;
+    width: 22px;
     border-radius: 50%;
-    padding: 0px 6px;
+    padding-right: 6px;
 }
 
-.user .user-options {
+.user > .user-options {
     background: #3a3b3c;
     color: #e4e6eb;
     border-radius: 50%;
