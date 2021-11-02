@@ -36,48 +36,50 @@
     
     <div class="container">
         <sidebar class="sidebar">
-            <div class="article">
-                <div class="image">
-                    <img src="https://lorempixel.com/100/100/" alt="">
+            <div class="sticky-sidebar">
+                <div class="article">
+                    <div class="image">
+                        <img src="https://lorempixel.com/100/100/" alt="">
+                    </div>
+                    <span>Percy</span>
                 </div>
-                <span>Percy</span>
-            </div>
-            
-            <div class="article">
-                <div class="image">
-                    <img src="" alt="">
+                
+                <div class="article">
+                    <div class="image">
+                        <i class="fa fa-user-friends"></i>
+                    </div>
+                    <span>Buscar amigos</span>
                 </div>
-                <span>Buscar amigos</span>
-            </div>
-            <div class="article">
-                <div class="image">
-                    <img src="" alt="">
+                <div class="article">
+                    <div class="image">
+                        <i class="fa fa-tv"></i>
+                    </div>
+                    <span>Watch</span>
                 </div>
-                <span>Grupos</span>
-            </div>
-            <div class="article">
-                <div class="image">
-                    <img src="" alt="">
+                <div class="article">
+                    <div class="image">
+                        <i class="fa fa-users"></i>
+                    </div>
+                    <span>Grupos</span>
                 </div>
-                <span>Marketplace</span>
-            </div>
-            <div class="article">
-                <div class="image">
-                    <img src="" alt="">
+                <div class="article">
+                    <div class="image">
+                        <i class="fa fa-store"></i>
+                    </div>
+                    <span>Marketplace</span>
                 </div>
-                <span>Watch</span>
-            </div>
-            <div class="article">
-                <div class="image">
-                    <img src="" alt="">
+                <div class="article">
+                    <div class="image">
+                        <i class="fa fa-history"></i>
+                    </div>
+                    <span>Recuerdos</span>
                 </div>
-                <span>Recuerdos</span>
-            </div>
-            <div class="article">
-                <div class="image">
-                    <img src="" alt="">
+                <div class="article">
+                    <div class="image">
+                        <i class="fa fa-chevron-down"></i>
+                    </div>
+                    <span>Ver más</span>
                 </div>
-                <span>Ver más</span>
             </div>
         </sidebar>
 
@@ -117,13 +119,15 @@
             
             <div class="container-posts">
                 <div class="post">
-                    <div class="posts-descrip">
+                    <div class="post-descript">
                         <div class="user-post">
                             <img src="https://lorempixel.com/90/90/" alt="">
-                            <h5 style="color: #b0b3b8;">Lorem, ipsum dolor.</h5>
-                            <p class="time">50 min</p>
+                            <div>
+                                <a href="#">Lorem, ipsum dolor.</a>
+                                <p class="time">50 min</p>
+                            </div>
                         </div>
-                        <a href="#"><i class="fa fa-user"></i></a>
+                        <a href="#"><i class="fa fa-ellipsis-h"></i></a>
                     </div>
                     <div class="post-body">
                         <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Praesentium, autem. Quisquam quasi perferendis commodi molestias sapiente mollitia est maiores animi.</p>
@@ -131,9 +135,50 @@
                     </div>
                     <div class="post-action">
                         <div class="rcc">
-                            <a href="#"><i class="fa fa-thumbs-up"></i> Me gusta</a>
-                            <a href="#"><i class="fa fa-comment-alt"></i> Comentar</a>
-                            <a href="#"><i class="fa fa-share"></i> Compartir</a>
+                            <a href="#">
+                                <i class="fa fa-thumbs-up"></i>
+                                <span>Me gusta</span>
+                            </a>
+                            <a href="#">
+                                <i class="fa fa-comment-alt"></i>
+                                <span>Comentar</span>
+                            </a>
+                            <a href="#">
+                                <i class="fa fa-share"></i>
+                                <span>Compartir</span>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+                <div class="post">
+                    <div class="post-descript">
+                        <div class="user-post">
+                            <img src="https://lorempixel.com/90/90/" alt="">
+                            <div>
+                                <a href="#">Lorem, ipsum dolor.</a>
+                                <p class="time">50 min</p>
+                            </div>
+                        </div>
+                        <a href="#"><i class="fa fa-ellipsis-h"></i></a>
+                    </div>
+                    <div class="post-body">
+                        <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Praesentium, autem. Quisquam quasi perferendis commodi molestias sapiente mollitia est maiores animi.</p>
+                        <img src="https://lorempixel.com/1080/760/" alt="">
+                    </div>
+                    <div class="post-action">
+                        <div class="rcc">
+                            <a href="#">
+                                <i class="fa fa-thumbs-up"></i>
+                                <span>Me gusta</span>
+                            </a>
+                            <a href="#">
+                                <i class="fa fa-comment-alt"></i>
+                                <span>Comentar</span>
+                            </a>
+                            <a href="#">
+                                <i class="fa fa-share"></i>
+                                <span>Compartir</span>
+                            </a>
                         </div>
                     </div>
                 </div>
@@ -141,47 +186,49 @@
         </section>
 
         <sidebar class="content-chat">
-            <div class="chat-options">
-                <h5 style="color: #b0b3b8;">Contactos</h5>
-                <div>
-                    <a href="#"><i class="fa fa-video"></i></a>
-                    <a href="#"><i class="fa fa-search"></i></a>
-                    <a href="#"><i class="fa fa-ellipsis-h"></i></a>
+            <div class="sticky-chat">
+                <div class="chat-options">
+                    <h5 style="color: #b0b3b8;">Contactos</h5>
+                    <div>
+                        <a href="#"><i class="fa fa-video"></i></a>
+                        <a href="#"><i class="fa fa-search"></i></a>
+                        <a href="#"><i class="fa fa-ellipsis-h"></i></a>
+                    </div>
                 </div>
-            </div>
-            <div class="content-contacts">
-                <a href="#" class="contacts">
-                    <img src="https://lorempixel.com/90/90/" alt="">
-                    <p>Lorem ipsum dolor sit.</p>
-                </a>
-                <a href="#" class="contacts">
-                    <img src="https://lorempixel.com/90/90/" alt="">
-                    <p>Lorem ipsum dolor sit.</p>
-                </a>
-                <a href="#" class="contacts">
-                    <img src="https://lorempixel.com/90/90/" alt="">
-                    <p>Lorem ipsum dolor sit.</p>
-                </a>
-                <a href="#" class="contacts">
-                    <img src="https://lorempixel.com/90/90/" alt="">
-                    <p>Lorem ipsum dolor sit.</p>
-                </a>
-                <a href="#" class="contacts">
-                    <img src="https://lorempixel.com/90/90/" alt="">
-                    <p>Lorem ipsum dolor sit.</p>
-                </a>
-                <a href="#" class="contacts">
-                    <img src="https://lorempixel.com/90/90/" alt="">
-                    <p>Lorem ipsum dolor sit.</p>
-                </a>
-                <a href="#" class="contacts">
-                    <img src="https://lorempixel.com/90/90/" alt="">
-                    <p>Lorem ipsum dolor sit.</p>
-                </a>
-                <a href="#" class="contacts">
-                    <img src="https://lorempixel.com/90/90/" alt="">
-                    <p>Lorem ipsum dolor sit.</p>
-                </a>
+                <div class="content-contacts">
+                    <a href="#" class="contacts">
+                        <img src="https://lorempixel.com/90/90/" alt="">
+                        <p>Lorem ipsum dolor sit.</p>
+                    </a>
+                    <a href="#" class="contacts">
+                        <img src="https://lorempixel.com/90/90/" alt="">
+                        <p>Lorem ipsum dolor sit.</p>
+                    </a>
+                    <a href="#" class="contacts">
+                        <img src="https://lorempixel.com/90/90/" alt="">
+                        <p>Lorem ipsum dolor sit.</p>
+                    </a>
+                    <a href="#" class="contacts">
+                        <img src="https://lorempixel.com/90/90/" alt="">
+                        <p>Lorem ipsum dolor sit.</p>
+                    </a>
+                    <a href="#" class="contacts">
+                        <img src="https://lorempixel.com/90/90/" alt="">
+                        <p>Lorem ipsum dolor sit.</p>
+                    </a>
+                    <a href="#" class="contacts">
+                        <img src="https://lorempixel.com/90/90/" alt="">
+                        <p>Lorem ipsum dolor sit.</p>
+                    </a>
+                    <a href="#" class="contacts">
+                        <img src="https://lorempixel.com/90/90/" alt="">
+                        <p>Lorem ipsum dolor sit.</p>
+                    </a>
+                    <a href="#" class="contacts">
+                        <img src="https://lorempixel.com/90/90/" alt="">
+                        <p>Lorem ipsum dolor sit.</p>
+                    </a>
+                </div>
             </div>
         </sidebar>
     </div>

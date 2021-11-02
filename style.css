@@ -21,6 +21,7 @@ p {
 }
 
 .header {
+    position: fixed;
     background: #242526;
     color: #e4e6eb;
     border-bottom: 1px solid #373839;
@@ -112,12 +113,12 @@ p {
 
 .user > a > span {
     font-size: 12px;
+    padding-left: 6px;
 }
 
 .user > a > img {
     width: 22px;
     border-radius: 50%;
-    padding: 0px 6px;
 }
 
 .user > .user-options {
@@ -138,9 +139,49 @@ p {
     background: #4e4f50;
 }
 
+/*==== Sidebar Izq ====*/
+
+.sticky-sidebar {
+    position: sticky;
+    top: 65px;
+}
+
+.article {
+    display: flex;
+    align-items: center;
+    height: 16px;
+    padding: 12px 8px;
+    border-radius: 8px;
+    cursor: pointer;
+}
+
+.article:hover {
+    background: #242526;
+}
+
+.article span {
+    font-size: 12px;
+    padding-left: 8px;
+}
+
+.image > img {
+    width: 32px;
+    border-radius: 50%;
+}
+
+.image > i {
+    color: #76b2ff;
+    display: flex;
+    width: 28px;
+    padding: 0px 3px;
+    justify-content: center;
+}
+
+
 /*==== Contenido ====*/
 
 .container {
+    padding-top: 45px;
     display: grid;
     grid-template-columns: repeat(12, 1fr);
 }
@@ -150,6 +191,7 @@ p {
 }
 
 .sidebar {
+    padding-left: 12px;
     margin-right: 3.4em;
     grid-column: span 3;
 }
@@ -179,17 +221,23 @@ p {
     width: 5.4em;
     height: 9em;
     border-radius: 8px;
+    transition: ease-in-out .2s;
+}
+
+.stories > img:hover {
+    opacity: 0.8;
 }
 
 .my-post {
     margin: 16px 0px;
     background: #242526;
     padding: 0px 16px;
-    border-radius: 8px;
+    border-radius: 6px;
+    box-shadow: 0px 1px 4px #00000054;
 }
 
 .create-post {
-    padding: 14px 0px;
+    padding: 12px 0px;
     display: flex;
     align-items: center;
 }
@@ -214,7 +262,7 @@ p {
 
 .others-post {
     border-top: 1px solid #3a3b3c;
-    padding: 8px 0px;
+    padding: 6px 0px;
     display: grid;
     grid-template-columns: repeat(3, 1fr);
 }
@@ -229,6 +277,94 @@ p {
 
 .others-post > a:hover {
     background: #4e4f50;
+}
+
+.post {
+    background: #242526;
+    border-radius: 6px;
+    margin-bottom: 14px;
+    box-shadow: 0px 1px 4px #00000054;
+}
+
+.post-descript {
+    padding: 14px 16px 8px;
+    display: flex;
+    justify-content: space-between;
+}
+
+.user-post {
+    display: flex;
+    align-items: center;
+}
+
+.user-post > img {
+    width: 34px;
+    border-radius: 50%;
+    cursor: pointer;
+}
+
+.user-post > div > a {
+    font-size: 12px;
+    color: #fff;
+}
+
+.user-post > div > a:hover {
+    text-decoration: underline;
+}
+
+.time {
+    margin-top: 4px;
+    font-size: 10px;
+}
+
+.time:hover {
+    text-decoration: underline;
+}
+
+.user-post > div {
+    padding-left: 8px;
+    display: flex;
+    flex-direction: column;
+}
+
+.post-body > p {
+    padding: 0px 16px 12px 16px;
+}
+
+.post-body > img {
+    width: 100%;
+    cursor: pointer;
+}
+
+.rcc {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 2px 16px 4px;
+}
+
+.rcc > a {
+    font-size: 12px;
+    width: 168px;
+    height: 28px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 6px;
+}
+
+.rcc > a:hover {
+    background: #373839;
+}
+
+.rcc > a > span{
+    padding-left: 6px;
+}
+
+/*==== Chat ====*/
+.sticky-chat {
+    position: sticky;
+    top: 65px;
 }
 
 .chat-options {
@@ -263,5 +399,8 @@ p {
 .contacts > img {
     border-radius: 50%;
     width: 28px;
-    padding-right: 8px;
+}
+
+.contacts > p {
+    padding-left: 8px;
 }
