@@ -11,7 +11,7 @@ body {
 }
 
 a {
-    color: #e4e6eb;
+    color: #b0b3b8;
     text-decoration: none;
 }
 
@@ -60,7 +60,7 @@ a {
     display: flex;
     justify-content: space-between;
     align-items: center;
-    margin: 0px 52px;
+    margin: 0px 60px;
     grid-column: span 6;
 }
 
@@ -150,12 +150,13 @@ a {
 }
 
 .content-posts {
-    margin: 20px 3.2em;
+    margin: 20px 3.8em;
     grid-column: span 6;
 }
 
 .content-chat {
     margin-left: 3.4em;
+    padding: 0px 16px;
     grid-column: span 3;
 }
 
@@ -170,7 +171,73 @@ a {
 }
 
 .stories > img {
-    width: 5.6em;
-    height: 9.2em;
+    width: 5.4em;
+    height: 9em;
     border-radius: 8px;
+}
+
+.my-post {
+    margin: 16px 0px;
+    background: #242526;
+    padding: 0px 16px;
+    border-radius: 8px;
+}
+
+.create-post {
+    padding: 14px 0px;
+    display: flex;
+    align-items: center;
+}
+
+.create-post img {
+    border-radius: 50%;
+    width: 34px;
+}
+
+.create-post a {
+    background: #3a3b3c;
+    padding: 6px 14px;
+    width: 100%;
+    margin-left: 10px;
+    border-radius: 20px;
+    transition: ease-in-out .1s;
+}
+
+.create-post a:hover {
+    background: #555758;
+}
+
+.others-post {
+    border-top: 1px solid #3a3b3c;
+    padding: 8px 0px;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+}
+
+.others-post > a {
+    padding: 8px 0px;
+    border-radius: 8px;
+    text-align: center;
+    font-size: 12px;
+    transition: ease-in-out .1s;
+}
+
+.others-post > a:hover {
+    background: #4e4f50;
+}
+
+.chat-options {
+    display: flex;
+    justify-content: space-between;
+}
+
+.chat-options div a {
+    font-size: 12px;
+    padding: 4px 6px;
+    border-radius: 50%;
+    margin-left: 2px;
+}
+
+.chat-options div a:hover {
+    background: #4e4f50;
 }
