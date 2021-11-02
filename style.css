@@ -15,6 +15,11 @@ a {
     text-decoration: none;
 }
 
+p {
+    color: #b0b3b8;
+    font-size: 12px;
+}
+
 .header {
     background: #242526;
     color: #e4e6eb;
@@ -229,6 +234,7 @@ a {
 .chat-options {
     display: flex;
     justify-content: space-between;
+    align-items: center;
 }
 
 .chat-options div a {
@@ -240,4 +246,22 @@ a {
 
 .chat-options div a:hover {
     background: #4e4f50;
+}
+
+.contacts {
+    display: flex;
+    align-items: center;
+    padding: 6px 10px;
+    margin-top: 8px;
+    border-radius: 8px;
+}
+
+.contacts:hover {
+    background: #373839;
+}
+
+.contacts > img {
+    border-radius: 50%;
+    width: 28px;
+    padding-right: 8px;
 }
