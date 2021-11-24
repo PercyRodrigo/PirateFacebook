@@ -28,6 +28,7 @@ p {
     height: 44px;
     display: grid;
     grid-template-columns: repeat(12, 1fr);
+    z-index: 1;
 }
 
 .search {
@@ -192,6 +193,10 @@ p {
     margin-top: 20px;
 }
 
+.sidebar, .content-posts, .content-chat {
+    background-color: #18191a;
+}
+
 .sidebar {
     padding-left: 8px;
     margin-right: 3.4em;
@@ -207,6 +212,7 @@ p {
     margin-left: 3.4em;
     padding: 0px 16px;
     grid-column: span 3;
+    z-index: 0;
 }
 
 /*==== Posts ====*/
@@ -343,17 +349,17 @@ p {
     display: flex;
     justify-content: space-between;
     align-items: center;
-    padding: 2px 16px 4px;
+    padding: 2px 12px 4px;
 }
 
 .rcc > a {
     font-size: 12px;
-    width: 168px;
+    width: 172px;
     height: 28px;
     display: flex;
     align-items: center;
     justify-content: center;
-    border-radius: 6px;
+    border-radius: 4px;
 }
 
 .rcc > a:hover {
@@ -407,4 +413,293 @@ p {
 .contacts > p {
     color: #fff;
     padding-left: 8px;
+}
+
+/*==== Function user ====*/
+
+.function-user {
+    position: fixed;
+    /* transform: translate(638px, 48px) translate(0%, 0px); */
+    right: 12px;
+    top: 42px;
+    width: 290px;
+    height: 0px;
+    z-index: 1;
+}
+
+.fun-profile { /*-------------FUNCION PERFIL----------------*/
+    display: none;
+    background-color: #242526;
+    border: 1px solid #373839;
+    border-radius: 6px;
+    padding: 8px 8px;
+}
+
+.my-profile {
+    display: flex;
+    padding: 8px 10px;
+    border-radius: 6px;
+    transition: ease-in-out .1s;
+}
+
+.my-profile:hover {
+    background: #373839;
+}
+
+.my-profile > div {
+    margin-left: 10px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.my-profile > div > h4 {
+    color: #fff;
+    font-size: 12px;
+}
+
+.my-profile > img {
+    width: 44px;
+    border-radius: 50%;
+}
+
+.my-profile-option {
+    display: flex;
+    flex-direction: column;
+    font-size: 12px;
+    font-weight: bold;
+    margin-top: 6px;
+    padding-top: 6px;
+    border-top: 1px solid #373839;
+}
+
+.my-profile-option > a {
+    display: flex;
+    align-items: center;
+    padding: 6px 12px;
+    margin-bottom: 4px;
+    border-radius: 6px;
+    transition: ease-in-out .1s;
+}
+
+.my-profile-option > a:hover {
+    background: #373839;
+}
+
+.my-profile-option > a > i {
+    font-size: 14px;
+    background: #3a3b3c;
+    padding: 6px 6px;
+    border-radius: 50%;
+}
+
+.my-profile-option > a > span {
+    padding-left: 10px;
+}
+
+.fun-notify { /*-------------FUNCION NOTIFICACIONES----------------*/
+    display: none;
+    background-color: #242526;
+    border: 1px solid #373839;
+    border-radius: 6px;
+    padding: 8px 8px;
+    max-height: 562px;
+    overflow: auto;
+}
+
+.fun-notify::-webkit-scrollbar {
+    width: 6px;
+}
+
+.fun-notify::-webkit-scrollbar-thumb {
+    background: #3a3b3c;
+    border-radius: 2px;
+}
+
+.notify-title {
+    display: flex;
+    justify-content: space-between;
+    padding: 0px 8px;
+    margin-bottom: 6px;
+}
+
+.content-notify {
+    display: flex;
+    align-items: center;
+    padding: 4px 8px;
+    border-radius: 8px;
+    transition: ease-in-out .2s;
+}
+
+.content-notify:hover {
+    background: #3a3b3c;
+    cursor: pointer;
+}
+
+.content-notify > div{
+    padding: 0px 10px;
+}
+
+.content-notify > img {
+    width: 40px;
+    border-radius: 50%;
+}
+
+.notify-descript {
+    color: #fff;
+    font-size: 11px;
+}
+
+.notify-time {
+    color: #2e89ff;
+    font-size: 9px;
+}
+
+.fun-messages { /*-------------FUNCION MENSAJES----------------*/
+    display: none;
+    background-color: #242526;
+    border: 1px solid #373839;
+    border-radius: 6px;
+    padding: 8px 8px;
+    max-height: 562px;
+    overflow: auto;
+}
+
+.fun-messages::-webkit-scrollbar {
+    width: 6px;
+}
+
+.fun-messages::-webkit-scrollbar-thumb {
+    background: #3a3b3c;
+    border-radius: 2px;
+}
+
+.messages-title {
+    display: flex;
+    justify-content: space-between;
+    padding: 0px 8px;
+    margin-bottom: 6px;
+}
+
+.content-messages {
+    display: flex;
+    padding: 6px 8px;
+    border-radius: 8px;
+    transition: ease-in-out .2s;
+}
+
+.content-messages:hover {
+    background: #3a3b3c;
+    cursor: pointer;
+}
+
+.content-messages > div{
+    padding: 0px 10px;
+}
+
+.content-messages > div > span{
+    font-size: 12px;
+}
+
+.content-messages > img {
+    width: 40px;
+    border-radius: 50%;
+}
+
+.details-messages {
+    display: flex;
+}
+
+.messages-descript {
+    font-size: 10px;
+    max-height: 16px;
+    overflow: hidden;
+}
+
+.messages-time {
+    font-size: 10px;
+}
+
+/*==== CHAT ====*/
+
+.container-crt {
+    display: flex;
+    position: fixed;
+    /* top: 120px; */
+    bottom: 0;
+    right: 60px;
+}
+
+.crt-content {
+    background: #242526;
+    width: 256px;
+    height: 344px;
+    border-radius: 8px 8px 0px 0px;
+    margin-left: 10px;
+}
+
+.crt-header {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 4px 6px;
+    border-bottom: 1px solid #373839;
+}
+
+.crt-header > span {
+    padding: 0px 6px;
+    cursor: pointer;
+}
+
+.crt-info {
+    display: flex;
+    align-items: center;
+}
+
+.crt-info > img {
+    width: 24px;
+    border-radius: 50%;
+    margin-right: 4px;
+}
+
+.crt-info > span {
+    font-size: 12px;
+}
+
+.crt-body {
+    display: flex;
+    flex-direction: column-reverse;
+    padding: 2px 8px;
+    max-height: 268px;
+    overflow: auto;
+}
+
+.crt-message-in {
+    display: flex;
+    align-items: flex-end;
+    margin: 2px 0px;
+}
+
+.crt-message-in > img {
+    width: 20px;
+    border-radius: 50%;
+    margin-right: 6px;
+}
+
+.crt-message-in > p {
+    color: #fff;
+    background: #3a3b3c;
+    padding: 6px 8px;
+    border-radius: 16px;
+}
+
+.crt-message-out {
+    font-size: 12px;
+    background: #0084ff;
+    padding: 6px 8px;
+    border-radius: 16px;
+    display: flex;
+    justify-content: flex-end;
+    width: 144px;
+    margin-left: auto;
 }
