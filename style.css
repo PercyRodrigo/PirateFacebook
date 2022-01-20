@@ -630,7 +630,8 @@ p {
     right: 60px;
 }
 
-.crt-content {
+.crt-content { /*----- CHAT -----*/
+    /* display: none; */
     background: #242526;
     width: 256px;
     height: 344px;
@@ -642,7 +643,7 @@ p {
     display: flex;
     align-items: center;
     justify-content: space-between;
-    padding: 4px 6px;
+    padding: 6px;
     border-bottom: 1px solid #373839;
 }
 
@@ -670,7 +671,7 @@ p {
     display: flex;
     flex-direction: column-reverse;
     padding: 2px 8px;
-    max-height: 268px;
+    max-height: 261px;
     overflow: auto;
 }
 
@@ -702,4 +703,29 @@ p {
     justify-content: flex-end;
     width: 144px;
     margin-left: auto;
+}
+
+.crt-footer {
+    display: flex;
+    padding: 6px 0px;
+}
+
+.crt-footer > input {
+    background: #3a3b3c;
+    color: #d9d9d9;
+    border: none;
+    padding: 8px 8px;
+    border-radius: 16px;
+    font-size: 12px;
+    width: 200px;
+    margin: 0px 6px;
+}
+
+.crt-footer > button {
+    background: none;
+    border: none;
+    color: #4e4f50;
+    font-size: 18px;
+    margin: 0px 12px;
+    cursor: pointer;
 }
