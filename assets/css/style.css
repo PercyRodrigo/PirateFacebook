@@ -20,6 +20,10 @@ p {
     font-size: 12px;
 }
 
+.show {
+    display: block !important;
+}
+
 .header {
     position: fixed;
     background: #242526;
@@ -631,7 +635,7 @@ p {
 }
 
 .crt-content { /*----- CHAT -----*/
-    /* display: none; */
+    display: none;
     background: #242526;
     width: 256px;
     height: 344px;

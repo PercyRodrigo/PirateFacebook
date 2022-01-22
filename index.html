@@ -6,7 +6,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Facebook Pirata</title>
     <script src="https://kit.fontawesome.com/56b1105c09.js" crossorigin="anonymous"></script>
-    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="./assets/css/style.css">
 </head>
 <body>
     
@@ -28,13 +28,15 @@
                 <span>Percy</span>
             </a>
             <a href="#" class="user-options"><i class="fa fa-th"></i></a>
-            <a href="#" class="user-options"><i class="fa fa-comment"></i></a>
-            <a href="#" class="user-options"><i class="fa fa-bell"></i></a>
-            <a href="#" class="user-options"><i class="fa fa-caret-down"></i></a>
+            <a href="#" id="ShowMessages" class="user-options"><i class="fa fa-comment"></i></a>
+            <a href="#" id="ShowNotifys" class="user-options"><i class="fa fa-bell"></i></a>
+            <a href="#" id="ShowProfileConfig" class="user-options"><i class="fa fa-caret-down"></i></a>
         </div>
     </header>
 
     <div class="function-user">
+
+        <!-- MY NOTIFICATIONS -->
         <div class="fun-profile">
             <a href="#" class="my-profile">
                 <img src="https://lorempixel.com/100/100/" alt="">
@@ -51,6 +53,7 @@
             </div>
         </div>
 
+        <!-- MY PROFILE -->
         <div class="fun-notify">
             <div class="notify-title">
                 <h4>Notificaciones</h4>
@@ -80,6 +83,7 @@
             </div>
         </div>
 
+        <!-- MY MESSAGES -->
         <div class="fun-messages">
             <div class="messages-title">
                 <h4>Mensajes</h4>
@@ -370,5 +374,6 @@
         </div>
     </div>
 
+    <script src="./assets/js/app.js"></script>
 </body>
 </html>
